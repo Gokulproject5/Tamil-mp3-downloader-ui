@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicHub - Premium Song Bundles</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+   <link rel="icon" href="assets/favi.png" type=" " />
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home"><i class="fa-solid fa-music fa-bounce" style="color: #ca02f2;"></i> Music<span style="font-weight:bolder;margin-left: -6px;">Hub</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Browse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-sm rounded-5 download-cta" href="https://github.com/anburocky3/tamil-mp3-downloader/archive/refs/heads/main.zip" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-download fa-spin-pulse me-1" style="color: #ffffff; font-style: oblique ; font-size: small; font-weight: 600;"> Download</i>
+                
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container-fluid text-center text-white mb-lg-5 mt-lg-5">
+        <h1>
+          Download Your Favorite<br /><span class="accent">Music Bundles</span>
+        </h1>
+        <p>Experience premium quality song collections curated just for you</p>
+        <a href="#features" class="browse-btn"
+          ><i class="fas fa-compass me-2"></i>Browse All Collections</a
+        >
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-5" id="features">
+      <div class="container-fluid mt-lg-5" id="categoriesSection">
+        <h2 class="text-center mb-5 fw-bold fs-1">Browse All Collections</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="category-card">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <div class="category-icon"><i class="fa-solid fa-download "></i></div>
+                
+              </div>
+              <h3 class="fw-bold mb-2">One-Click Download</h3>
+              <p class="text-light mb-4">
+              Download it easly with single click Your favourite music bundles.          
+                          </p>
+              <button
+                class="btn download-btn"
+              >
+               <a href="https://github.com/anburocky3/tamil-mp3-downloader/archive/refs/heads/main.zip" class="btn download-btn"><i class="fa-solid fa-download "></i>Download Now
+              </button></a> 
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="category-card">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <div class="category-icon"><i class="fas fa-star"></i></div>
+                
+              </div>
+              <h3 class="fw-bold mb-2">Star Hits</h3>
+              <p class="text-light mb-4">
+                Chart-topping hits from the biggest stars in the music industry
+              </p>
+              <button
+                class="btn download-btn"
+                onclick="showAlbums('star-hits', 'Star Hits')"
+              >
+                <i class="fas fa-folder-open me-2"></i>View Albums
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="category-card">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <div class="category-icon"><i class="fas fa-music"></i></div>
+            
+              </div>
+              <h3 class="fw-bold mb-2">Music Director Hits</h3>
+              <p class=" mb-4">
+                Curated collections from legendary music directors worldwide
+              </p>
+              <button
+                class="btn download-btn"
+                onclick="showAlbums('music-director', 'Music Director Hits')"
+              >
+                <i class="fas fa-folder-open me-2"></i>View Albums
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="category-card">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <div class="category-icon">
+                  <i class="fas fa-microphone"></i>
+                </div>
+                
+              </div>
+              <h3 class="fw-bold mb-2">Singer Hits</h3>
+              <p class="mb-4">
+                Best performances from your favorite vocal artists
+              </p>
+              <button
+                class="btn download-btn"
+                onclick="showAlbums('singer-hits', 'Singer Hits')"
+              >
+                <i class="fas fa-folder-open me-2"></i>View Albums
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="category-card">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <div class="category-icon"><i class="fas fa-clock"></i></div>
+               
+              </div>
+              <h3 class="fw-bold mb-2">Old Songs</h3>
+              <p class=" mb-4">
+                Timeless classics and golden era melodies that never get old
+              </p>
+              <button
+                class="btn download-btn"
+                onclick="showAlbums('old-songs', 'Old Songs')"
+              >
+                <i class="fas fa-folder-open me-2"></i>View Albums
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="category-card">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <div class="category-icon"><i class="fas fa-phone"></i></div>
+               
+              </div>
+              <h3 class="fw-bold mb-2">Ringtones / Instrumentals</h3>
+              <p class="mb-4">
+                Premium ringtones and instrumental tracks for every mood
+              </p>
+              <button
+                class="btn download-btn"
+                onclick="showAlbums('ringtones', 'Ringtones / Instrumentals')"
+              >
+                <i class="fas fa-folder-open me-2"></i>View Albums
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Albums Section -->
+      <div class="container d-none" id="albumsSection">
+        <a href="#" class="back-btn" onclick="hideAlbums(event)">
+          <i class="fas fa-arrow-left me-2"></i>Back to Categories
+        </a>
+        <h2 class="text-center mb-5 fw-bold fs-1" id="albumsTitle"></h2>
+        <div class="row" id="albumsGrid"></div>
+      </div>
+    </section>
+
+
+
+    <!-- How Its Work? -->
+      <section style="padding: 80px 0; background: rgba(255, 255, 255, 0.02);" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2 class="section-title text-start mb-4">How to run this app?</h2>
+                    <p style="color: #a0a0a0; margin-bottom: 30px;">If you are developer, enable this</p>
+                    <div style="background: linear-gradient(135deg, #d066ea, #764ba2); padding: 15px 25px; border-radius: 10px; display: inline-flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-check-circle" style="font-size: 1.5rem;"></i>
+                        <span style="font-weight: 600; font-size: 1.1rem;">Developer Mode</span>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 40px;">
+                        <h3 style="background: linear-gradient(135deg, #c904e8, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-size: 1.8rem; font-weight: 700; margin-bottom: 25px;">
+                            <i class="fas fa-tools me-2"></i>Build & run on your own!
+                        </h3>
+                        <div style="color: #ccc; line-height: 2;">
+                            <p style="margin-bottom: 20px;"><strong>1. Fork this and clone your project</strong></p>
+                            <p style="margin-bottom: 20px;"><strong>2. Open your terminal and run</strong></p>
+                            <div style="background: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 10px; margin-bottom: 20px; font-family: 'Courier New', monospace; border-left: 4px solid  #e14ff7;">
+                                <pre style="margin-bottom: 10px; color: #f44ff7;">git clone https://github.com/anburocky3/tamil-mp3-downloader</pre>
+                                <p style="margin-bottom: 0; color: #999; font-size: 0.9rem;">Replace "anburodky3" with your github username.</p>
+                            </div>
+                            <p style="margin-bottom: 20px;"><strong>3. Run python script like this:</strong></p>
+                            <div style="background: rgba(0, 0, 0, 0.4); padding: 20px; border-radius: 10px; margin-bottom: 20px; font-family: 'Courier New', monospace; border-left: 4px solid #bc2bc9;">
+                                <p style="margin-bottom: 10px; color: #e14ff7;">pip install -r requirements.txt</p>
+                                <p style="margin-bottom: 10px; color: #ec4ff7;">python main.py</p>
+                                <p style="margin-bottom: 0; color: #999; font-size: 0.9rem;">Make sure you have Python 3.10+ installed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="fw-bold">
+             <i class="fa-solid fa-music fa-bounce" style="color: #ca02f2;"></i> Music<span style="color: var(--accent)">Hub</span>
+            </h5>
+             <p class=" mt-3">
+              Your premium destination for downloading high-quality music
+              bundles. Discover, download, and enjoy.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-spotify"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Browse</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h6>Categories</h6>
+            <ul>
+              <li><a href="#features">Star Hits</a></li>
+              <li><a href="#features">Music Director</a></li>
+              <li><a href="#features">Singer Hits</a></li>
+              <li><a href="#features">Old Songs</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h6>Support</h6>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4 pt-4 border-top border-secondary">
+          <p class=" mb-0">
+            We don't support piracy and this project is completely for educational purposes only. Use it with care.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
