@@ -32,6 +32,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(#333, #ff33ff);
 }
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px; 
+}
+
 
 body {
   margin: 0;
