@@ -2,7 +2,7 @@
 :root {
   --primary: #0f0f0f;
   --secondary: #141414;
-  --accent: #cb7ffa;
+  --accent: rgb(221, 3, 255);
   --muted: #a0a0a0;
   --glass: rgba(255, 255, 255, 0.04);
   --glass-strong: rgba(255, 255, 255, 0.06);
@@ -175,9 +175,8 @@ background-attachment: fixed;
 #navbar{box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-  border-bottom:   rgb(208, 1, 249,0.7) solid 5px;
-  background: rgb(0, 0, 0,0.3);
+ border-bottom: 5px solid rgba(246, 15, 223, 0.8);
+  background: rgb(0, 0, 0,0.2);
   animation: navbar 0.5s ease-in-out;
 }
 @keyframes navbar {
@@ -196,16 +195,16 @@ background-attachment: fixed;
   text-align: center;
   margin-bottom: 10px;
   background: radial-gradient(
-      circle at 10% 40%,
-      rgba(199, 11, 236, 0.6),
+      circle at 10% 10%,
+      rgba(236, 11, 232, 0.8),
       transparent 20%
     ),
      radial-gradient(
       circle at 90% 90%,
-      rgba(199, 11, 236, 0.6),
+      rgb(226, 3, 255),
       transparent 20%
     ),
-    linear-gradient(135deg, #e8e7e7 0%, #0f0e0e 60%, #b700ff 100%);
+    linear-gradient(135deg, #e8e7e7 0%, #0f0e0e 50%, #fcfbfcc5 100%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.9; 
