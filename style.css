@@ -73,7 +73,7 @@ background-attachment: fixed;
 
 /* ---------- NAVBAR ---------- */
 .navbar {
-  background: rgba(12, 12, 12, 0.7);
+  background: rgb(12, 12, 12);
   backdrop-filter: blur(8px);
   padding: 12px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
@@ -159,7 +159,7 @@ background-attachment: fixed;
   color: var(--accent) !important;
 }
 .download-cta {
-  background: var(--glass);
+  background: linear-gradient(90deg, #8f26b5, var(--accent));
   padding: 8px 12px;
   border-radius: 999px;
   color: #fff;
@@ -176,7 +176,7 @@ background-attachment: fixed;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
  border-bottom: 5px solid rgba(246, 15, 223, 0.8);
-  background: rgb(0, 0, 0,0.2);
+  background: rgb(0, 0, 0, 0.9);
   animation: navbar 0.5s ease-in-out;
 }
 @keyframes navbar {
@@ -194,20 +194,7 @@ background-attachment: fixed;
   padding: 64px 0 40px;
   text-align: center;
   margin-bottom: 10px;
-  background: radial-gradient(
-      circle at 10% 10%,
-      rgba(236, 11, 232, 0.8),
-      transparent 20%
-    ),
-     radial-gradient(
-      circle at 90% 90%,
-      rgb(226, 3, 255),
-      transparent 20%
-    ),
-    linear-gradient(135deg, #e8e7e7 0%, #0f0e0e 50%, #fcfbfcc5 100%);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.9; 
+ 
 }
 
 
@@ -422,7 +409,7 @@ background-attachment: fixed;
 }
 
 .navbar {
-  background: rgba(15, 15, 15, 0.8);
+  background: rgb(15, 15, 15);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -479,6 +466,34 @@ background-attachment: fixed;
   padding: 30px;
   margin-bottom: 30px;
   transition: all 0.3s;
+  flex: 1;
+    z-index: 2;
+    position: relative;
+}
+.side-img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    mask-image: linear-gradient(to left, black, transparent);
+    -webkit-mask-image: linear-gradient(to left,black, transparent);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+     
+}
+.side-img:hover {
+    width: 220px;
+    height: 320px;
+    border-radius: 12px;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    mask-image: linear-gradient(to left, var(--glass), transparent);
+    -webkit-mask-image: linear-gradient(to left,black, transparent);
+    opacity: 1;
+     object-fit: cover;
 }
 .category-card:hover {
   transform: translateY(-8px);
