@@ -1,7 +1,7 @@
 :root {
   --primary: #0f0f0f;
   --secondary: #141414;
-  --accent: rgb(221, 3, 255);
+  --accent: #9A0AC6;
   --muted: #a0a0a0;
   --glass: rgba(255, 255, 255, 0.04);
   --glass-strong: rgba(255, 255, 255, 0.06);
@@ -124,6 +124,7 @@ html, body {
   position: relative;
   overflow: hidden;
   transition: 0.3s ease;
+  position: relative;
 }
 .category-card:hover {
   transform: translateY(-5px);
@@ -147,7 +148,7 @@ html, body {
 /* ---------------- SIDE IMAGE EFFECT ---------------- */
 .side-img {
   width: 180px;
-  height: auto;
+  height: 350px;
   border-radius: 14px;
   object-fit: cover;
   position: absolute;
